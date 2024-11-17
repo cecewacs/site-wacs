@@ -1,0 +1,30 @@
+.snowflake {
+    position: absolute;
+    top: -10px; /* Commence juste au-dessus de l'écran */
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+    user-select: none;
+    animation: fall 5s linear infinite, drift 3s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      top: -10px;
+    }
+    100% {
+      top: 100vh; /* Atteindre le bas de la fenêtre */
+    }
+  }
+  
+  @keyframes drift {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(50px * (1 - 2 * random())));
+    }
+  }
+  

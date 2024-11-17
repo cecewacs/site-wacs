@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  z-index: 10;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #00097B;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 10;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.titre{
+  color: white;
+  z-index: 10;
+}
+
+/* Style pour le tableau */
+table {
+  width: 80%;
+  border-collapse: collapse; /* Enlève les espaces entre les cellules */
+  z-index: 10;
+}
+
+/* Style pour les cellules d'en-tête */
+th {
+  background-color: #FE036B; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 10px;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Style pour les cellules de données */
+td {
+  background-color: #00097B;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  z-index: 10;
+}
+
+/* Bordure autour du tableau */
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+#button-container {
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.menu-button {
+  background-color: #fe036B;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  z-index: 10;
+}
+.menu-button:hover {
+  background-color: lightpink; /* Couleur de fond au survol */
+}
+
+p {
+  font-size:5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #282c34;
+  overflow: hidden; /* Pour cacher les flocons qui dépassent */
+  z-index: 10;
+}
